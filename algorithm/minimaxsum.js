@@ -35,5 +35,6 @@ function bonusCalculations(arr) {
 
 // Input
 const arr = [1, 2, 3, 4, 5];
+
 miniMaxSum(arr);
 bonusCalculations(arr);

@@ -1,0 +1,36 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #92d050;
+    color: white;
+    padding: 10px 20px;
+}
+
+main {
+   background-color: white;
+   padding: 20px; 
+}
+
+.joke p {
+   color: #333; 
+}
+
+.joke button {
+   background-color: #92d050; /* for 'This is Funny!' button */
+   color: white; 
+   border-radius: 5px;
+   padding: 10px 20px; 
+}
+
+.joke button:last-child {
+   background-color:white; /* for 'This is not funny' button */
+   border :1px solid #333 ;
+   color:#333 ;
+}

@@ -1,0 +1,155 @@
+
+.app {
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.app-top-bar {
+  background-color: white;
+  height: 65px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.top-bar-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.app-logo {
+  height: 55px; /* Or your preferred size */
+  margin-left: 17%;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  margin-right: 16%;
+}
+
+.user-avatar {
+  height: 40px; 
+  width: 40px; 
+  border-radius: 50%;
+  margin-left: 10px; 
+}
+
+.user-info {
+  display: flex;
+  align-items: center; /* Căn giữa các phần tử theo chiều dọc */
+}
+
+.user-name {
+  display: flex;
+  align-items: flex-start; /* Đảm bảo các phần tử con căn theo đỉnh của nhau */
+  flex-direction: column; /* Đặt hướng của các phần tử con thành dọc */
+  order: -1;
+  font-weight: 200;
+  width: 100%; /* Cho phép .user-name sử dụng toàn bộ chiều rộng */
+}
+
+.content {
+  font-weight: 100;
+  font-size: 0.7rem;
+  font-style: italic;
+  color: #ccc;
+}
+
+.name {
+  align-self: flex-end; 
+  font-size: 0.75rem;
+  color: #4B4B4B;
+}
+
+.content, .name {
+  display: block;
+  margin: 0; 
+}
+
+.app-header {
+  background-color: #29B363; /* Adjust the color to match the exact green */
+  padding: 40px;
+  color: white;
+  text-align: center;
+}
+
+.app-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #FCFCFC;
+}
+
+.joke-card {
+  padding: 30px;
+  max-width: 800px;
+  line-height: 1.5rem;
+  color: #7E7E7E;
+  text-align: left;
+  margin-bottom: 20px;
+  background-image: linear-gradient(to bottom, transparent 45%, #F0F0F0 55%);
+  background-size: 80% 2px; 
+  background-position: bottom; 
+  background-repeat: no-repeat; 
+}
+
+.button-container {
+  display: flex;
+  justify-content: center; 
+}
+
+.button {
+  padding: 10px 30px;
+  margin: 20px 10px 80px 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  text-align: center;
+}
+
+.funny {
+  background-color: #2C7EDB; /* Adjust to match the exact blue */
+  color: white;
+  width: 218px;
+}
+
+.not-funny {
+  background-color: #29B363; /* Adjust to match the exact green */
+  color: white;
+  width: 218px;
+}
+
+.app-footer {
+  border-top: 0.5px solid #D8D8D8;
+  background-color: #FFFFFF; /* Adjust the color to match the exact green */
+  padding: 20px;
+  line-height: 1.3rem;
+  text-align: center;
+}
+
+.content-footer {
+  color: #A0A0A0;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 0.75rem;
+}
+
+.final-footer {
+  color: #747474;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+/* Add media queries if necessary to match the responsive behavior */

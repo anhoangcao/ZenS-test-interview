@@ -37,18 +37,16 @@ app.post('/vote', (req, res) => {
 
   if (!votes[id]) votes[id] = { likes: 0, dislikes: 0 };
 
-  // Sửa ở đây: đảm bảo rằng bạn đang tăng đúng thuộc tính
   if (vote === 'like') {
     votes[id].likes += 1;
   } else if (vote === 'dislike') {
-    votes[id].dislikes += 1; // Sử dụng 'dislikes' thay vì 'dislike'
+    votes[id].dislikes += 1;
   }
   
   console.log(`Vote for joke ${id}: ${vote}. Current votes: `, votes[id]);
 
   res.json({ message: "Vote recorded. Thank you!" });
 });
-
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server is running on http://localhost:${PORT}`));
